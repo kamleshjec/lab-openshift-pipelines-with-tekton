@@ -2,7 +2,7 @@ FROM quay.io/openshiftlabs/workshop-dashboard:3.7.1
 
 USER root
 
-COPY . /tmp/src
+COPY . \tmp\src
 
 RUN rm -rf /tmp/src/.git* && \
     chown -R 1001 /tmp/src && \
